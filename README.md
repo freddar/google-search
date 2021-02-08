@@ -30,5 +30,5 @@ For this project, we used:
 
 * Google's Source Code when getting stuck
 
-## *Page*
+## *HTML Code*
 [Fred's Google Search](index.md)
