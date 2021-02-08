@@ -1,4 +1,4 @@
-# GOOGLE SEARCH HTML/CSS Project
+# GOOGLE SEARCH HTML/CSS PROJECT
 ## *Date created*
 Sunday, February the 7th, 2021.
 
@@ -30,5 +30,5 @@ For this project, we used:
 
 * Google's Source Code when getting stuck
 
-## *Page demo*
-[a link](https//github.com/freddar/google-search/main/index.md)
+## *Page*
+[Fred's Google Search](index.md)
