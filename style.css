@@ -1,158 +1,137 @@
 /* Body */
 
-body{
-
+body {
     font-family: arial, sans-serif;
     font-size: 13px;
-
 }
 
 /* Header Links Block*/
 
-header{
-
+header {
     padding-bottom: 110px;
     margin-top: 89px;
     width: 100%;
     display: flex;
     flex: 1;
     flex-direction: row;
-
 }
 
 #links {
-
     display: inline-block;
     line-height: 24px;
     vertical-align: middle;
     position: absolute;
-    top:22px;
-    right:28px;    
-   
+    top: 22px;
+    right: 28px;
 }
 
-.header_links{
-
+.header_links {
     padding: 2px;
     margin: 2px;
     color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
-
 }
 
-.header_links:hover{
-
+.header_links:hover {
     text-decoration: underline;
-
 }
 
 /* Logo Div */
 
-#image > #logo{
-
+#image > #logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex: 1;
     margin: 0 auto;
-   
+
 }
 
 /* Search Form block */
-
 .input {
-
     background: #fff;
     display: flex;
     flex: 0 1 auto;
     justify-content: center;
     height: 42px;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 26px;
-    margin-bottom: 35px;
-
+    margin: 26px auto 35px; /*Seteabas dos margins, cuando con uno sería suficiente */
 }
 
 .pics {
-
-        flex: 0 1 auto;
-        display: flex;
-        padding: 5px 8px 0 16px;
-        padding-left: 14px;
-        width: 551px;
-        justify-content: space-between;
-        flex-direction: row;
-
+    flex: 0 1 auto;
+    display: flex;
+    padding: 5px 8px 0 14px; /*Seteabas dos paddings, cuando con uno sería suficiente */
+    width: 551px;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 @media (max-width: 805px) {
 
     .pics {
+        width: 420px;
+    }
 
-    width: 420px;
-    
-  }
+    .input-holder {
+        width: 87.5%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #footer-2 {
+        justify-content: center;
+        margin-top: 2px;
+    }
 }
 
-.magnify{
-
+.magnify {
     display: flex;
     flex: 0 1 auto;
     align-items: center;
     padding-right: 13px;
     margin-top: -5px;
-
 }
 
-.magnify-left{
-    
+.magnify-left {
     margin: auto;
-    
 }
 
-.magnify-glass-left{
-
+.magnify-glass-left {
     margin-top: 3px;
     color: #9aa0a6;
     height: 20px;
     width: 20px;
-    display: inline-block;
+    /*display: inline-block; Estas clases se sobrescriben con lo que son innecesarias*/
     fill: currentColor;
-    height: 20px;
+    /*height: 20px; Estas clases se sobrescriben con lo que son innecesarias*/
     line-height: 20px;
-    width: 20px;
+    /*width: 20px; Estas clases se sobrescriben con lo que son innecesarias*/
     display: flex;
     flex: 0 1 auto;
-
 }
 
-.magnify-glass-left svg{
-
+.magnify-glass-left svg {
     display: block;
     height: 100%;
     width: 100%;
-    
 }
 
 .speak {
-
     display: flex;
     flex: 0 1 auto;
     margin-top: -5px;
     align-items: stretch;
-
 }
 
-.speak-right{
-
-   margin: auto;
-
+.speak-right {
+    margin: auto;
 }
 
-.speak-loud{
-
+.speak-loud {
     flex: 0 1 auto;
     display: flex;
     cursor: pointer;
@@ -163,39 +142,24 @@ header{
     padding: 0 4px;
     width: 24px;
     line-height: 42px;
-    
 }
 
-.speak-loud svg{
-
+.speak-loud svg {
     height: 24px;
     width: 24px;
     display: flex;
     flex: 0 1 auto;
-    
 }
 
 .input-holder {
-
     display: flex;
     flex: 0 1 auto;
     justify-content: center;
     width: 100%;
     position: absolute;
-
 }
 
-@media (max-width: 805px) {
-
-    .input-holder {
-        
-    width: 87.5%;
-    
-  }
-}
-
-#search_input{
-
+#search_input {
     background: transparent;
     border: 1px solid #dfe1e5;
     box-shadow: none;
@@ -203,63 +167,49 @@ header{
     height: 42px;
     margin: 0 auto;
     width: 574px;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     font-size: 16px;
     text-align: center;
     z-index: 9;
     display: flex;
     flex: 0 1 auto;
-
 }
 
-#search_input:hover{
-
+#search_input:hover {
     box-shadow: 0px 0px 5px lightgray;
 }
 
-#search_input:focus{
-
+#search_input:focus {
     outline: none;
 }
 
 ::-webkit-input-placeholder {
-
     color: lightgray !important;
+}
 
-    }
-     
 :-moz-placeholder { /* Firefox 18- */
+    color: lightgray !important;
+}
 
-    color:lightgray !important;  
+::-moz-placeholder { /* Firefox 19+ */
+    color: lightgray !important;
+}
 
-    }
-     
-::-moz-placeholder {  /* Firefox 19+ */
-
-    color: lightgray !important;  
-
-    }
-     
-::-ms-input-placeholder { 
-
-    color: lightgray !important;  
-
-    }
+::-ms-input-placeholder {
+    color: lightgray !important;
+}
 
 .submit {
-
-        display: block;
-        text-align: center;
-       
+    display: block;
+    text-align: center;
 }
-    
-.buttons{
 
+.buttons {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     font-size: 14px;
     margin: 0 4px;
     padding: 0 16px;
@@ -267,18 +217,15 @@ header{
     height: 36px;
     min-width: 54px;
     cursor: pointer;
-    
 }
 
-.buttons:hover{
-
-    box-shadow: 0px 0px 5px gray;
+.buttons:hover {
+    box-shadow: 0 0 5px gray;/*Cuando el valor es 0, sobran las unidades 'px' */
 }
 
 /* Footer */
 
-footer{
-
+footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -286,98 +233,59 @@ footer{
     width: 100%;
     background: #f2f2f2;
     border-top: 1px solid #dadce0;
-   
 }
 
-@media (max-width: 805px) {
-
-    footer {
-        
-    width: 100%;
-    
-  }
-}
-
-#footer-1{
-
+#footer-1 {
     font-size: 15px;
     padding-bottom: 13px;
-    padding-top:13px;
-    border-bottom: 1px solid #dadce0; 
+    padding-top: 13px;
+    border-bottom: 1px solid #dadce0;
     padding-left: 35px;
     display: block;
-    
 }
 
-#footer-1 a{
-
+#footer-1 a {
     text-decoration: none;
     color: grey;
-    
 }
 
-#footer-1 a:hover{
-
+#footer-1 a:hover {
     text-decoration: underline;
-    
 }
 
-#footer-2{
-
+#footer-2 {
     font-size: 15px;
-    border-bottom: 1px solid #dadce0; 
+    border-bottom: 1px solid #dadce0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
     margin-top: -4px;
     margin-bottom: -5px;
-    
 }
 
-@media (max-width: 805px) {
-
-    #footer-2 {
-
-    justify-content: center;
-    margin-top: 2px;
-    
-  }
-}
-
-#footer-2 > #footer-left{
-
+#footer-2 > #footer-left {
     float: left;
-    padding: 4px;
     list-style-type: none;
-    padding-left: 25px;  
+    padding: 4px 4px 4px 25px; /*Seteabas dos paddings, cuando con uno sería suficiente */
+}
 
-  }
-
-#footer-2 > #footer-right{
-
+#footer-2 > #footer-right {
     float: right;
     list-style-type: none;
     padding-right: 25px;
-   
 }
 
 #footer-2 li {
-
-    display: inline; 
+    display: inline;
     padding-left: 10px;
     padding-right: 10px;
-    
 }
 
-#footer-2 ul li a{
-
+#footer-2 ul li a {
     text-decoration: none;
     color: grey;
-
 }
 
-#footer-2 ul li a:hover{
-
+#footer-2 ul li a:hover {
     text-decoration: underline;
-    
 }
