@@ -30,5 +30,8 @@ For this project, we used:
 
 * Google's Source Code when getting stuck
 
-## *HTML Code*
+## *HTML Code in MD File*
 [Fred's Google Search](index.md)
+
+## *Demo*
+[Is Fred's Google Search like Google Search?](https://freddar.github.io/google-search/)
